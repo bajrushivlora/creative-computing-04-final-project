@@ -31,29 +31,46 @@ body {
   width: 100vw;
 }
 
-.welcome h1 span {
+h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 30px;
-  letter-spacing: 12px;
+  font-size: 50px;
+  letter-spacing: 13px;
   color: white;
   font-weight: lighter;
   animation-name: move;
-  animation-duration: 8s;
+  animation-duration: 7s;
   animation-direction: normal;
   animation-fill-mode: forwards;
-  transform: translate(-80%,-50%);
 }
 
-.welcome h1 span:hover {
-  animation-name: bounce;
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #c2e4e8;
+  letter-spacing: 10px;
+  line-height: 50px;
+  font-weight: lighter;
+  position: absolute;
+  top: 100px;
+  left: 910px;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #ffa500;
+}
+
 
 @keyframes move {
   0%{
-    transform: translateX(-600px);
+    transform: translateX(-1300px); 
   }
   100%{
-    transform: translateX(1050px);
+    transform: translateX(370px);
   }
 }
 
@@ -62,19 +79,3 @@ body {
     transform: translateY(100px);
   }
 
-
-
-.verb h1 span {
-  font-size: 80px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: lighter; 
-  margin-left: 160px;
-}
-
-.verb h1 span:hover {
-  font-size: 80px;
-  letter-spacing: 110px;
-  color: #00ad02;
-  margin-left: 160px;
-}
