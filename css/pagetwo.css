@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url('../images/alien.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: auto;
+  width: auto;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  letter-spacing: 13px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes move {
+  0%{
+    transform: translateY(-200px);
+  }
+  100%{
+    transform: translateY(-15px);
+  }
+}
+
+.box-content {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  letter-spacing: 13px;
+  color: white;
+  font-weight: lighter;
+}
+
+.box-1 {
+  width: 60%;
+  height: 40%;
+}
+
+.yesrow {
+  height: 40%;
+  width: 20%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: lighter;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  animation-name: left;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.norow {
+  height: 40%;
+  width: 20%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: lighter;
+  position: absolute;
+  top: 300px;
+  left: 900px;
+  animation-name: right;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.thirdrow {
+  height: 40%;
+  width: 20%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: lighter;
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  animation-name: up;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes left {
+  0%{
+    transform: translateX(-700px);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(-50px);
+    opacity: 1;
+  }
+}
+
+@keyframes right {
+  0%{
+    transform: translateX(700px);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(40px);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  0%{
+    transform: translateY(700px);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
