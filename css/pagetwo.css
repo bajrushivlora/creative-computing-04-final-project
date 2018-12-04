@@ -142,7 +142,7 @@ a {
 
 @keyframes right {
   0%{
-    transform: translateX(700px);
+    transform: translateX(699px);
     opacity: 1;
   }
   100%{
