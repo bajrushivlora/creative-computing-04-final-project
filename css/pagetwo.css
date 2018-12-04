@@ -128,6 +128,7 @@ a {
   animation-fill-mode: forwards;
   opacity: 0;
 }
+
 @keyframes left {
   0%{
     transform: translateX(-700px);
