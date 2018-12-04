@@ -12,7 +12,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url('../images/fire.jpg');
+  background-image: url('../images/peace.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -35,7 +35,7 @@ body {
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 70px;
+  font-size: 50px;
   letter-spacing: 13px;
   color: white;
   font-weight: lighter;
@@ -44,7 +44,7 @@ h1 {
   padding-left: 200px;
   padding-top: 150px;
   animation-name: omg;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
@@ -53,20 +53,8 @@ h1 {
   0%{
     transform: scale(0); 
   }
-  30%{
-    transform: scale(1.2)
-  }
-  40%{
-    transform: scale(0);
-  }
-  60%{
-    transform: scale(1.2); 
-  }
-  70%{
-    transform: scale(0)
-  }
   100%{
-    transform: scale(1.2); 
+    transform: scale(1); 
   }
 }
 

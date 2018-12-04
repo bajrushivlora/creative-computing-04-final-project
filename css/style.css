@@ -41,6 +41,7 @@ h1 {
   animation-duration: 7s;
   animation-direction: normal;
   animation-fill-mode: forwards;
+  opacity: 2%;
 }
 
 h2 {
@@ -59,11 +60,6 @@ a {
   text-decoration: none;
   color: white;
 }
-
-a:hover {
-  color: #ffa500;
-}
-
 
 @keyframes move {
   0%{

@@ -12,7 +12,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url('../images/fire.jpg');
+  background-image: url('../images/hu.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -35,39 +35,50 @@ body {
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 70px;
+  font-size: 50px;
   letter-spacing: 13px;
   color: white;
   font-weight: lighter;
-  text-align: center;
-  padding-right: 200px;
-  padding-left: 200px;
-  padding-top: 150px;
-  animation-name: omg;
-  animation-duration: 5s;
+  animation-name: move;
+  animation-duration: 7s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
 
-@keyframes omg {
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #c2e4e8;
+  letter-spacing: 10px;
+  line-height: 50px;
+  font-weight: lighter;
+  position: absolute;
+  top: 100px;
+  left: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  opacity: 5%;
+}
+
+a:hover {
+  color: #ffa500;
+}
+
+
+@keyframes move {
   0%{
-    transform: scale(0); 
-  }
-  30%{
-    transform: scale(1.2)
-  }
-  40%{
-    transform: scale(0);
-  }
-  60%{
-    transform: scale(1.2); 
-  }
-  70%{
-    transform: scale(0)
+    transform: translateX(-1300px); 
   }
   100%{
-    transform: scale(1.2); 
+    transform: translateX(180px);
   }
 }
 
+@keyframes bounce {
+  100%{
+    transform: translateY(100px);
+  }
 

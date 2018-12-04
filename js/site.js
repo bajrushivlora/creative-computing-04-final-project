@@ -52,10 +52,20 @@ function hslColor(h, s, l) {
 
 
 
+function hslColor(h, s, l) {  
+  var hue = h;
+  var saturation = s + "%";
+  var luminance = l + "%";
 
+  var color = "hsl(" + hue + "," + saturation + "," + luminance + ")";
 
+  return color;
+}
 
-
+var hue = randomNumber(0, 360);
+var color = hslColor(hue, 360, 10);
+var element = document.querySelector('a');
+element.style.background = color;
 
 
 

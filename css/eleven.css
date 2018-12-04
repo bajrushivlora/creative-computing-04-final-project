@@ -12,7 +12,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url('../images/fire.jpg');
+  background-image: url('../images/best.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -35,7 +35,7 @@ body {
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 70px;
+  font-size: 40px;
   letter-spacing: 13px;
   color: white;
   font-weight: lighter;
