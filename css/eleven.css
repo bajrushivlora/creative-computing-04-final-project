@@ -53,21 +53,8 @@ h1 {
   0%{
     transform: scale(0); 
   }
-  30%{
-    transform: scale(1.2)
-  }
-  40%{
-    transform: scale(0);
-  }
-  60%{
-    transform: scale(1.2); 
-  }
-  70%{
-    transform: scale(0)
-  }
   100%{
-    transform: scale(1.2); 
+    transform: scale(1); 
   }
 }
-
 
